@@ -1,0 +1,66 @@
+:root {
+    /* palette */
+    --green: #107c10ff;
+    --blue: #2d64e6ff;
+    --jet: #302b27ff;
+    --white: #f5f3f5ff;
+    --orange: #ffa400ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--jet);
+    color: var(--white);
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.nav-bar {
+    padding: 0% 2%;
+    background: var(--jet);
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Press Start 2P', cursive;
+    font-size: x-large;
+}
+
+.green {
+    color: var(--green);
+}
+
+.blue {
+    color: var(--blue);
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+}
+
+.nav-list li {
+    padding: 0px 15px;
+    font-size: large;
+    height: max-content;
+}
+
+.main-banner {
+    height: 60vh;
+    background-image: url(../img/the-wticher3-banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
