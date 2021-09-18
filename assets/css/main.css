@@ -13,6 +13,7 @@
     --nav-list-size: 18px;
     /* paddings */
     --nav-items-padding: 15px;
+    --text-title-padding: 5px;
 }
 
 * {
@@ -20,10 +21,10 @@
     padding: 0;
     box-sizing: border-box;
     /* / */
-    margin-block-start: 0px;
-    margin-block-end: 0px;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
 }
 
 body {
@@ -39,15 +40,13 @@ a {
     text-decoration: none;
 }
 
-
-/* text padding */
-
 p,
 h1,
 h2,
 h3,
 h4 {
-    padding-top: 5px;
+    /* texts and titles padding */
+    padding-top: var(--text-title-padding);
 }
 
 h1,
