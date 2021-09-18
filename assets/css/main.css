@@ -15,8 +15,14 @@
 
 body {
     background: var(--jet);
+    /* / */
     color: var(--white);
     font-family: 'Roboto Condensed', sans-serif;
+    font-size: large;
+}
+
+.container * {
+    display: flex;
 }
 
 a {
@@ -24,43 +30,61 @@ a {
     text-decoration: none;
 }
 
+h1,
+h2,
+h3,
+h4 {
+    padding: 5px 0px;
+    /* / */
+    font-family: 'Press Start 2P', cursive;
+}
+
+h1 {
+    font-size: x-large;
+}
+
+span.green {
+    color: var(--green);
+}
+
+span.blue {
+    color: var(--blue);
+}
+
 .nav-bar {
+    height: 8vh;
     padding: 0% 2%;
+    /* / */
     background: var(--jet);
-    display: flex;
+    /* / */
     justify-content: space-between;
-    height: 10vh;
     align-items: center;
 }
 
-.logo {
+.nav-bar .logo {
+    padding: 0px 15px;
+    /* / */
     font-family: 'Press Start 2P', cursive;
     font-size: x-large;
 }
 
-.green {
-    color: var(--green);
-}
-
-.blue {
-    color: var(--blue);
-}
-
 .nav-list {
-    display: flex;
     list-style: none;
 }
 
 .nav-list li {
     padding: 0px 15px;
-    font-size: large;
-    height: max-content;
 }
 
 .main-banner {
     height: 60vh;
+    padding: 5vh 5vw;
+    /* / */
     background-image: url(../img/the-wticher3-banner.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    /* / */
+    flex-direction: column;
+    justify-content: end;
 }
