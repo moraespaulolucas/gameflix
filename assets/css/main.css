@@ -4,6 +4,7 @@
     --blue: #2d64e6ff;
     --orange: #ffa400ff;
     --white: #f5f3f5ff;
+    --white-bg: #e5e3e5ff;
     --jet: #302b27;
     --jet-bg: rgba(48, 43, 39, 0.6);
     /* font sizes */
@@ -102,9 +103,9 @@ span.blue {
 }
 
 .nav-bar .nav-list {
-    list-style-type: none;
-    /* / */
     display: flex;
+    /* / */
+    list-style-type: none;
 }
 
 .nav-bar .nav-list li a {
@@ -119,6 +120,21 @@ span.blue {
 .nav-bar .nav-list li a:hover {
     background-color: var(--white);
     color: var(--jet);
+    text-shadow: none;
+}
+
+.nav-bar .nav-list li .dropdown-settings {
+    background-color: var(--white);
+    box-shadow: 0px 4px 4px 0px var(--jet-bg);
+}
+
+.nav-bar .nav-list li .dropdown-settings a {
+    color: var(--jet);
+    text-shadow: none;
+}
+
+.nav-bar .nav-list li .dropdown-settings a:hover {
+    background-color: var(--white-bg);
 }
 
 .main-banner {
