@@ -5,7 +5,7 @@
     --orange: #ffa400ff;
     --white: #f5f3f5ff;
     --jet: #302b27;
-    --jet-bg: rgba(48, 43, 39, 0.5);
+    --jet-bg: rgba(48, 43, 39, 0.6);
     /* font sizes */
     --title1-size: 24px;
     --title2-size: 20px;
@@ -81,19 +81,21 @@ span.blue {
 
 .nav-bar {
     padding: 0vh 5vw;
-    height: auto;
     width: 100%;
     position: fixed;
+    z-index: 2;
     /* / */
-    background: none;
+    background: var(--jet-bg);
     /* / */
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* / */
+    text-shadow: 2px 2px var(--jet);
 }
 
 .nav-bar .logo {
-    padding: var(--nav-items-padding);
+    padding: 0px var(--nav-items-padding);
     /* / */
     font-family: 'Press Start 2P', cursive;
     font-size: var(--nav-logo-size);
@@ -106,7 +108,10 @@ span.blue {
 }
 
 .nav-bar .nav-list li a {
-    padding: calc(var(--nav-logo-size) + var(--nav-items-padding) - var(--nav-list-size)) 15px;
+    padding: var(--nav-items-padding);
+    /* / */
+    display: block;
+    text-align: center;
     /* / */
     font-size: var(--nav-list-size);
 }
