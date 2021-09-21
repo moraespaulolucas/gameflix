@@ -1,0 +1,40 @@
+@media only screen and (max-width: 840px) {
+    body {
+        /* text font sizes */
+        --title1-size: 20px;
+        --title2-size: 16px;
+        --title3-size: 12px;
+        --title4-size: 8px;
+        --text-size: 14px;
+        /* nav bar text font sizes */
+        --nav-logo-size: 20px;
+        --nav-list-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        /* text font sizes */
+        --title1-size: 16px;
+        --title2-size: 12px;
+        --title3-size: 8px;
+        --title4-size: 4px;
+        --text-size: 10px;
+        /* nav bar text font sizes */
+        --nav-logo-size: 16px;
+        --nav-list-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    body {
+        --container-edge-padding: 5px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    body {
+        --nav-logo-size: 12px;
+        --nav-list-size: 6px;
+    }
+}

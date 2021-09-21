@@ -189,7 +189,7 @@ span.blue {
 
 .footer-grid {
     display: grid;
-    grid-template-columns: auto 25%;
+    grid-template-columns: auto auto;
     grid-gap: 10vw;
 }
 
